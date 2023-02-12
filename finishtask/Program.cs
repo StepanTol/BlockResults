@@ -1,24 +1,24 @@
-﻿string[] array1 = new string[8] {"result", "git", "run", "task", "nut", "push", "35", "rich"};
-string[] array2 = new string[array1.Length];
-void ChangeArray (string[] array1, string[] array2)
+﻿string[] Array1 = new string[8] {"result", "git", "run", "task", "nut", "push", "35", "rich"};
+string[] Array2 = new string[Array1.Length];
+void ChangeArray (string[] Array1, string[] Array2)
 {
     int count = 0;
-    for (int i = 0; i < array1.Length; i++)
+    for (int i = 0; i < Array1.Length; i++)
     {
-    if(array1[i].Length <= 3)
+    if(Array1[i].Length <= 3)
         {
-        array2[count] = array1[i];
+        Array2[count] = Array1[i];
         count++;
         }
     }
 }
-void PrintArray(string[] array)
+void PrintArray(string[] Array)
 {
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < Array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.Write($"{Array[i]} ");
     }
     Console.WriteLine();
 }
-ChangeArray(array1, array2);
-PrintArray(array2);
+ChangeArray(Array1, Array2);
+PrintArray(Array2);
